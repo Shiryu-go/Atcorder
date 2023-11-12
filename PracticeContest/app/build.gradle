@@ -22,7 +22,10 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:31.1-jre'
-
+    /*
+    //TODO なぜかここでつまづいた。理由を調べておくこと。
+    https://qiita.com/opengl-8080/items/b07307ab0d33422be9c5
+     */
     implementation 'org.assertj:assertj-core:3.2.0'
 }
 
