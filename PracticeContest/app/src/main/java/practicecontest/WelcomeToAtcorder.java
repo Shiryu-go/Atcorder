@@ -30,9 +30,19 @@ public class WelcomeToAtcorder {
         intlist.add(sc.nextInt());
         intlist.add(sc.nextInt());
         intlist.add(sc.nextInt());
+        String string = sc.nextLine();
         for(int i : intlist){
             number+= i;
         }
-        System.out.println(sc.nextLine() + number);
+        System.out.print(number + " " + string);
+    }
+    public static void main2(String[] args){
+        try (Scanner sc = new Scanner(System.in)) {
+            int r = sc.nextInt();
+            r += sc.nextInt();
+            r += sc.nextInt();
+            String s = sc.next();
+            System.out.println(r + " " + s);
+        }
     }
 }
