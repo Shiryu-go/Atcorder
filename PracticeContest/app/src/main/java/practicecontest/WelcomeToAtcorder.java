@@ -22,7 +22,7 @@ s
 a+b+c と s を空白区切りで 1 行に出力せよ。
  */
 //TODO 回答は後ほど行う。
-public class WerlcomeToAtcorder {
+public class WelcomeToAtcorder {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         List<Integer> intlist = new ArrayList<Integer>();
