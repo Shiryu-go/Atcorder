@@ -35,6 +35,6 @@ public class WelcomeToAtcorderTest {
         in.inputln("2 3");
         in.inputln("hoge");
         WelcomeToAtcorder.main(null);
-        assertThat(out.readLine()).isEqualTo("6");
+        assertThat(out.readLine()).isEqualTo("6 hoge");
     }
 }
