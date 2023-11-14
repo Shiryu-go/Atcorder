@@ -30,7 +30,7 @@ public class WelcomeToAtcorder {
         intlist.add(sc.nextInt());
         intlist.add(sc.nextInt());
         intlist.add(sc.nextInt());
-        String string = sc.nextLine();
+        String string = sc.next();
         for(int i : intlist){
             number+= i;
         }
