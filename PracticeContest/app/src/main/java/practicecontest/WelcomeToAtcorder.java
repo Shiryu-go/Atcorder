@@ -36,13 +36,4 @@ public class WelcomeToAtcorder {
         }
         System.out.print(number + " " + string);
     }
-    public static void main2(String[] args){
-        try (Scanner sc = new Scanner(System.in)) {
-            int r = sc.nextInt();
-            r += sc.nextInt();
-            r += sc.nextInt();
-            String s = sc.next();
-            System.out.println(r + " " + s);
-        }
-    }
 }
