@@ -6,7 +6,9 @@ import org.junit.jupiter.api.Test;
 import 出力関係.StandardInputStream;
 import 出力関係.StandardOutputStream;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+
+
 
 //TODO 詳細について調べる
 // https://qiita.com/aky100200/items/f4f7d6279524774610fc
@@ -32,6 +34,7 @@ public class WelcomeToAtcorderTest {
         in.inputln("1");
         in.inputln("2 3");
         in.inputln("hoge");
-        assertThat("A").isEqualTo("A");
+        WelcomeToAtcorder.main(null);
+        assertThat(out.readLine()).isEqualTo("6");
     }
 }
