@@ -14,8 +14,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 // https://qiita.com/aky100200/items/f4f7d6279524774610fc
 
 public class WelcomeToAtcorderTest {
-    private StandardInputStream in = new StandardInputStream();
-    private StandardOutputStream out = new StandardOutputStream();
+    private final StandardInputStream in = new StandardInputStream();
+    private final StandardOutputStream out = new StandardOutputStream();
 
     @BeforeEach
     public void before() {
