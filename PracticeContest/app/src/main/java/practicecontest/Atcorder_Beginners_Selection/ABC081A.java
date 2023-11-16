@@ -1,21 +1,23 @@
 package practicecontest.Atcorder_Beginners_Selection;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class ABC081A {
     public static  void main(String[] args){
-        int number = 0;
+        int count=0;
         try(Scanner sc = new Scanner(System.in)){
-            if(sc.nextInt() == 1){
-                number++;
+            String digit = sc.nextLine();
+            char[] list = digit.toCharArray();
+            for(int i = 0; i < 3; i++) {
+                if (Character.getNumericValue(list[i]) == 1) {
+                    count++;
+                    System.out.println(list[i]);
+                }
             }
-            if(sc.nextInt() == 1){
-                number++;
-            }
-            if(sc.nextInt() == 1){
-                number++;
-            }
-            System.out.print(number);
+            System.out.print(count);
         }
     }
 }
