@@ -14,7 +14,6 @@ public class ABC081A {
             for(int i = 0; i < 3; i++) {
                 if (Character.getNumericValue(list[i]) == 1) {
                     count++;
-                    System.out.println(list[i]);
                 }
             }
             System.out.print(count);
