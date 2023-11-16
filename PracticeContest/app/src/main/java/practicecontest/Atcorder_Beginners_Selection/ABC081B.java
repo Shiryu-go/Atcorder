@@ -14,11 +14,11 @@ public class ABC081B {
         boolean 繰り返し = true;
         try(Scanner sc = new Scanner(System.in)){
             int 数字を読み込む回数 = sc.nextInt();
-            for(int i = 0 ; i <= 数字を読み込む回数 ; i++){
+            for(int i = 0 ; i < 数字を読み込む回数 ; i++){
                 list.add(sc.nextInt());
             }
             while(繰り返し){
-                for(int i = 0 ; i <= list.size() ; i++){
+                for(int i = 0 ; i < list.size() ; i++){
                     if(list.get(i)%2 == 0){
                         list.set(i,list.get(i)/2);
                     }else{
