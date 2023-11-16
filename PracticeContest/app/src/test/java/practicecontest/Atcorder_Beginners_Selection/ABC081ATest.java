@@ -26,14 +26,20 @@ public class ABC081ATest {
 
     @Test
     public void main01() {
+        in.inputln("100" );
+        ABC081A.main(null);
+        assertThat(out.readLine()).isEqualTo("1");
+    }
+    @Test
+    public void main03() {
         in.inputln("101" );
-        ABC086A.main(null);
+        ABC081A.main(null);
         assertThat(out.readLine()).isEqualTo("2");
     }
     @Test
     public void main02() {
         in.inputln("000" );
-        ABC086A.main(null);
+        ABC081A.main(null);
         assertThat(out.readLine()).isEqualTo("0");
     }
 }
