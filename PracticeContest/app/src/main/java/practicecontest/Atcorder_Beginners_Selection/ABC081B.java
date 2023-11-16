@@ -25,11 +25,8 @@ public class ABC081B {
                         繰り返し = false;
                         break;
                     }
-                    if(i== list.size()){
-                        数字を2で割れる回数++;
-                    }
-
                 }
+                数字を2で割れる回数++;
             }
             System.out.println(数字を2で割れる回数);
         }
