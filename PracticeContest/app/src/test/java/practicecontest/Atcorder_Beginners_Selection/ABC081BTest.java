@@ -26,8 +26,16 @@ public class ABC081BTest {
 
     @Test
     public void main01() {
-        in.inputln("100" );
+        in.inputln("3" );
+        in.inputln("8 12 40" );
         ABC081B.main(null);
-        assertThat(out.readLine()).isEqualTo("1");
+        assertThat(out.readLine()).isEqualTo("2");
+    }
+    @Test
+    public void main04() {
+        in.inputln("4" );
+        in.inputln("5 6 8 10" );
+        ABC081B.main(null);
+        assertThat(out.readLine()).isEqualTo("0");
     }
 }
