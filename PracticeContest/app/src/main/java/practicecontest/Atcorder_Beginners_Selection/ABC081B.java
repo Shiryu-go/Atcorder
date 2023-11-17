@@ -17,13 +17,13 @@ public class ABC081B {
             for(int i = 0 ; i < 数字を読み込む回数 ; i++){
                 list.add(sc.nextInt());
             }
-            while(繰り返し){
+            a : while(繰り返し){
                 for(int i = 0 ; i < list.size() ; i++){
                     if(list.get(i)%2 == 0){
                         list.set(i,list.get(i)/2);
                     }else{
                         繰り返し = false;
-                        break;
+                        break a;
                     }
                 }
                 数字を2で割れる回数++;
