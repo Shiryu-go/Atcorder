@@ -28,7 +28,7 @@ public class B {
     //後ろから取るやり方わからんくて草
     //list.size()-number
     public static void 出力(List<Integer> list){
-        list.forEach(number -> System.out.println(number));
+        list.forEach(System.out::println);
     }
     public static void main(String[] args){
         入力B_record 入力;
