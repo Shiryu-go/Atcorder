@@ -21,12 +21,10 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
 
     // This dependency is used by the application.
-    implementation 'com.google.guava:guava:31.1-jre'
-    /*
-    //TODO なぜかここでつまづいた。理由を調べておくこと。
-    https://qiita.com/opengl-8080/items/b07307ab0d33422be9c5
-     */
-    implementation 'org.assertj:assertj-core:3.2.0'
+    implementation 'com.google.guava:guava:32.0.0-android'
+    // https://mvnrepository.com/artifact/org.assertj/assertj-core
+    testImplementation 'org.assertj:assertj-core:3.25.3'
+
 }
 
 application {
