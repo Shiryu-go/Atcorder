@@ -18,9 +18,11 @@ public class B {
     }
     public static void 計算チェック(String str){
        if(str.charAt(0) == '1'){
-           計算x(Integer.parseInt(String.valueOf(str.charAt(2))));
+           String[] parts = str.split(" ");
+           計算x(Integer.parseInt(parts[1]));
        }else if(str.charAt(0)=='2'){
-           計算k(空の配列.size()-Integer.parseInt(String.valueOf(str.charAt(2))));
+           String[] parts = str.split(" ");
+           計算k(空の配列.size()- Integer.parseInt(parts[1]));
        }
     }
     //後ろから取るやり方わからんくて草

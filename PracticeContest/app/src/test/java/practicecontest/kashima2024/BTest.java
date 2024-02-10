@@ -32,8 +32,8 @@ public class BTest {
         in.inputln("1 40");
         in.inputln("2 3");
         B.main(null);
-        assertThat(out.readLine()).isEqualTo("30\n" +
-                "20");
+        assertThat(out.readLine()).isEqualTo("30");
+        assertThat(out.readLine()).isEqualTo("20");
     }
 
 
