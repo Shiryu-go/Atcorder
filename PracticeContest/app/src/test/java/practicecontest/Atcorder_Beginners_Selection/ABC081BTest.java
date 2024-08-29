@@ -36,6 +36,6 @@ public class ABC081BTest {
         in.inputln("4" );
         in.inputln("5 6 8 10");
         ABC081B.main(null);
-        assertThat(out.readLine()).isEqualTo("O");
+        assertThat(out.readLine()).isEqualTo("0");
     }
 }

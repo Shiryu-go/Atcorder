@@ -11,7 +11,7 @@ public class ABC081B {
     }
 
     private static int divideUntilOdd(NumberList numbers) {
-        if (numbers.isAllEven()) {
+        if (numbers.isNotAllEven()) {
             return numbers.count;
         }
         return divideUntilOdd(numbers.Divide());
@@ -51,13 +51,13 @@ class NumberList{
         this.numberList = numberList;
     }
     // 全ての数が偶数であることを確認するメソッド
-    public boolean isAllEven(){
+    public boolean isNotAllEven(){
         for(int number : this.numberList){
-            if(number%2==0){
-                return false;
+            if(number%2==1){
+                return true;
             }
         }
-        return true;
+        return false;
     }
     // 全ての数が偶数であることを確認し、2で割った数を返す
     public NumberList Divide(){
