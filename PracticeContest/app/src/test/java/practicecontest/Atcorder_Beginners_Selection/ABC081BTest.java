@@ -38,4 +38,11 @@ public class ABC081BTest {
         ABC081B.main(null);
         assertThat(out.readLine()).isEqualTo("0");
     }
+    @Test
+    public void main03(){
+        in.inputln("6" );
+        in.inputln("382253568 723152896 37802240 379425024 404894720 471526144");
+        ABC081B.main(null);
+        assertThat(out.readLine()).isEqualTo("8");
+    }
 }
