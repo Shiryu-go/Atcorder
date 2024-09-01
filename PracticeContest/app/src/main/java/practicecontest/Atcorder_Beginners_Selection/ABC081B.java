@@ -8,9 +8,6 @@ import java.util.Scanner;
 https://atcoder.jp/contests/abs/tasks/abc081_b
  */
 public class ABC081B {
-import java.util.Scanner;
-
-public class ABC081B {
     public static void main(String[] args) {
         NumberList numbers = LoadInput.Load();
         int result = divideUntilOdd(numbers);
