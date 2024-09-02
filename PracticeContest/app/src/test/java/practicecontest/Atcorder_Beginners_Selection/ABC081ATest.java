@@ -25,19 +25,19 @@ public class ABC081ATest {
     }
 
     @Test
-    public void main01() {
+    public void ABC081ATest01() {
         in.inputln("100" );
         ABC081A.main(null);
         assertThat(out.readLine()).isEqualTo("1");
     }
     @Test
-    public void main03() {
+    public void ABC081ATest03() {
         in.inputln("101" );
         ABC081A.main(null);
         assertThat(out.readLine()).isEqualTo("2");
     }
     @Test
-    public void main02() {
+    public void ABC081ATest02() {
         in.inputln("000" );
         ABC081A.main(null);
         assertThat(out.readLine()).isEqualTo("0");
