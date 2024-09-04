@@ -25,5 +25,6 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Execute Gradle Test
-        run:
-          ./PracticeContest/gradlew test;
+        run: ./gradlew test
+        working-directory: ./PracticeContest
+
