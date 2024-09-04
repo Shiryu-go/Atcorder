@@ -9,7 +9,7 @@ import 出力関係.StandardOutputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ABC086Test {
+public class ABC086ATest {
     private final StandardInputStream in = new StandardInputStream();
     private final StandardOutputStream out = new StandardOutputStream();
 
