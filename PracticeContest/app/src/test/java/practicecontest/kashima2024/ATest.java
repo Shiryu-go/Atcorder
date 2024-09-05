@@ -1,4 +1,4 @@
-package practicecontest.Atcorder_Beginners_Selection;
+package practicecontest.kashima2024;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,7 +8,7 @@ import 出力関係.StandardOutputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ABC081BTest {
+public class ATest {
     private final StandardInputStream in = new StandardInputStream();
     private final StandardOutputStream out = new StandardOutputStream();
 
@@ -23,27 +23,18 @@ public class ABC081BTest {
         System.setIn(null);
         System.setOut(null);
     }
+    @Test
+    public void 入力チェック_入力例1(){
+        in.inputln("3 9 2");
+        A.main(null);
+        assertThat(out.readLine()).isEqualTo("3 5 7 9");
+    }
+    @Test
+    public void 入力チェック_入力例2(){
+        in.inputln("10 10 1");
+        A.main(null);
+        assertThat(out.readLine()).isEqualTo("10");
+    }
 
-    @Test
-    public void main01() {
-        in.inputln("3");
-        in.inputln("8 12 40");
-        ABC081B.main(null);
-        assertThat(out.readLine()).isEqualTo("2");
-    }
-    @Test
-    public void main02(){
-        in.inputln("4");
-        in.inputln("5 6 8 10");
-        ABC081B.main(null);
-        assertThat(out.readLine()).isEqualTo("0");
-    }
-    @Test
-    public void main03(){
-        in.inputln("6");
-        in.inputln("382253568 723152896 37802240 379425024 404894720 471526144");
-        ABC081B.main(null);
-        assertThat(out.readLine()).isEqualTo("8");
-    }
 
 }
