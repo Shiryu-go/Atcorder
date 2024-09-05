@@ -1,6 +1,5 @@
 package practicecontest.Atcorder_Beginners_Selection;
 
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,7 +8,8 @@ import 出力関係.StandardOutputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ABC086Test {
+// https://atcoder.jp/contests/abs/tasks/abc087_b
+public class ABC087BTest {
     private final StandardInputStream in = new StandardInputStream();
     private final StandardOutputStream out = new StandardOutputStream();
 
@@ -27,15 +27,23 @@ public class ABC086Test {
 
     @Test
     public void main01() {
-        in.inputln("3 4" );
-        ABC086A.main(null);
-        assertThat(out.readLine()).isEqualTo("Even");
-    }
-    @Test
-    public void main02(){
-        in.inputln("1 21");
-        ABC086A.main(null);
-        assertThat(out.readLine()).isEqualTo("Odd");
+        in.inputln("100");
+        ABC087B.main(null);
+        assertThat(out.readLine()).isEqualTo("1");
     }
 
+    @Test
+    public void main03() {
+        in.inputln("101");
+        ABC087B.main(null);
+        assertThat(out.readLine()).isEqualTo("2");
+    }
+
+    @Test
+    public void main02() {
+        in.inputln("000");
+        ABC087B.main(null);
+        assertThat(out.readLine()).isEqualTo("0");
+
+    }
 }

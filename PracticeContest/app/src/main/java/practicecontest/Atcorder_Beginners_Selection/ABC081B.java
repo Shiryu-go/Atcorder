@@ -8,28 +8,72 @@ import java.util.Scanner;
 https://atcoder.jp/contests/abs/tasks/abc081_b
  */
 public class ABC081B {
-    public static void main(String[] args){
-        List<Integer> list = new ArrayList<>();
-        int 数字を2で割れる回数 = 0;
-        boolean 繰り返し = true;
-        try(Scanner sc = new Scanner(System.in)){
-            int 数字を読み込む回数 = sc.nextInt();
-            for(int i = 0 ; i < 数字を読み込む回数 ; i++){
-                list.add(sc.nextInt());
-            }
-            a : while(繰り返し){
-                for(int i = 0 ; i < list.size() ; i++){
-                    if(list.get(i)%2 == 0){
-                        list.set(i,list.get(i)/2);
-                    }else{
-                        繰り返し = false;
-                        break a;
-                    }
-                }
-                数字を2で割れる回数++;
-            }
-            System.out.println(数字を2で割れる回数);
-        }
+import java.util.Scanner;
+
+public class ABC081B {
+    public static void main(String[] args) {
+        NumberList numbers = LoadInput.Load();
+        int result = divideUntilOdd(numbers);
+        System.out.println(result);
     }
 
+    private static int divideUntilOdd(NumberList numbers) {
+        if (numbers.isNotAllEven()) {
+            return numbers.count;
+        }
+        return divideUntilOdd(numbers.Divide());
+    }
+}
+
+class LoadInput{
+    static NumberList Load(){
+        int size;
+        String[] array;
+        try(Scanner sc = new Scanner(System.in)){
+            String digit = sc.nextLine();
+            size=Integer.parseInt(digit);
+            // 配列のサイズを確保
+            array = new String[size];
+            //一行から空白で区切られた数字を読み込む
+            array = sc.nextLine().split(" ");
+        }
+        return new NumberList(0,array);
+    }
+
+}
+
+class NumberList{
+    int count=0;
+    ArrayList<Integer> numberList;
+
+    public NumberList(int count, String[] array){
+        this.numberList = new ArrayList<>();
+        this.count = count;
+        for(String number : array){
+            this.numberList.add(Integer.valueOf(number));
+        }
+    }
+    public NumberList(int count, ArrayList<Integer> numberList){
+        this.count = count;
+        this.numberList = numberList;
+    }
+    // 全ての数が偶数であることを確認するメソッド
+    public boolean isNotAllEven(){
+        for(int number : this.numberList){
+            if(number%2==1){
+                return true;
+            }
+        }
+        return false;
+    }
+    // 全ての数が偶数であることを確認し、2で割った数を返す
+    public NumberList Divide(){
+        ArrayList<Integer> newNumberList = new ArrayList<>();
+        for(int number : this.numberList){
+            newNumberList.add(number/2);
+        }
+        return new NumberList(this.count+1,newNumberList);
+    }
+
+    
 }
