@@ -18,8 +18,8 @@ jobs:
           ref: main
       - uses: actions/setup-java@v3
         with:
-          distribution: temurin
           java-version: 17
+          cache: gradle
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
