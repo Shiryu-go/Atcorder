@@ -27,7 +27,6 @@ dependencies {
     https://qiita.com/opengl-8080/items/b07307ab0d33422be9c5
      */
     implementation 'org.assertj:assertj-core:3.2.0'
-
 }
 
 application {
