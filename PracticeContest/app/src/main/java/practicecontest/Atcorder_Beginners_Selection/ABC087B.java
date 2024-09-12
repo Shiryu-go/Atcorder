@@ -13,8 +13,12 @@ public class ABC087B {
     }
 
     public 回答のリスト 全件網羅() {
-        List<回答> list = new ArrayList<>();
+        List<計算結果と内容> list = new ArrayList<>();
         return new 回答のリスト(list);
+    }
+
+    public int 合計金額が予定通りの件数をカウント(入力値 input , 計算結果と内容 value){
+        return 0;
     }
 }
 
@@ -27,13 +31,14 @@ record 入力値(
 ){}
 
 record 回答のリスト(
-  List<回答> 回答List
+  List<計算結果と内容> 回答List
 ){}
 
-record 回答(
+record 計算結果と内容(
         int 五百円玉の枚数,
         int 百円玉の枚数,
-        int 五十円玉の枚数
+        int 五十円玉の枚数,
+        int 合計金額
 ){}
 
 
