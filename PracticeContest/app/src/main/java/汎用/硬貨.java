@@ -10,4 +10,8 @@ public enum 硬貨 {
     硬貨(int i) {
         金額 = i;
     }
+
+    public Integer get金額() {
+        return 金額;
+    }
 };
