@@ -34,7 +34,7 @@ public class ABC087B {
     }
 
     public static boolean 合計金額が予定通りの件数をカウント(入力値 input , 計算結果と内容 value){
-        return true;
+        return input.合計金額() == value.合計金額の取得();
     }
 }
 
