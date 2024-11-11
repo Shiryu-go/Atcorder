@@ -26,24 +26,33 @@ public class ABC087BTest {
     }
 
     @Test
-    public void main01() {
+    public void ABC087BTestSampleInput01() {
+        in.inputln("2");
+        in.inputln("2");
+        in.inputln("2");
         in.inputln("100");
-        ABC087B.main(null);
-        assertThat(out.readLine()).isEqualTo("1");
-    }
-
-    @Test
-    public void main03() {
-        in.inputln("101");
         ABC087B.main(null);
         assertThat(out.readLine()).isEqualTo("2");
     }
 
     @Test
-    public void main02() {
-        in.inputln("000");
+    public void ABC087BTestSampleInput02() {
+        in.inputln("5");
+        in.inputln("1");
+        in.inputln("0");
+        in.inputln("150");
         ABC087B.main(null);
         assertThat(out.readLine()).isEqualTo("0");
+    }
+
+    @Test
+    public void ABC087BTestSampleInput03() {
+        in.inputln("30");
+        in.inputln("40");
+        in.inputln("50");
+        in.inputln("6000");
+        ABC087B.main(null);
+        assertThat(out.readLine()).isEqualTo("213");
 
     }
 }
